@@ -201,7 +201,7 @@ versions:
   # and there has been none since. The poll still runs on the fleet schedule:
   # its cost is one API call and the point is to catch the next release on the
   # day it lands, not to reflect how often that happens.
-  poll_interval: "29 */6 * * *"
+  poll_interval: "22 0-23/6 * * *"
 
 tests:
   # `script:` resolves from the REPOSITORY ROOT — unlike `metadata.default` and
