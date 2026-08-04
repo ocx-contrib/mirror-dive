@@ -70,17 +70,6 @@ rules:
   highestUserWastedPercent: 0.10
 ```
 
-## Install with ocx
-
-```sh
-ocx install ocx.sh/dive/dive
-```
-
-```sh
-# or pin a specific version
-ocx install ocx.sh/dive/dive:0.13.1
-```
-
 ## Links
 
 - [dive on GitHub](https://github.com/wagoodman/dive)
