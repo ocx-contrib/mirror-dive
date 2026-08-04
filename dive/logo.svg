@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="dive">
+  <title>dive</title>
+  <!--
+    Original mark authored for the OCX mirror of dive — upstream ships no logo.
+    Four stacked bars are the image layers; the arrow descends through them,
+    knocked out of each bar by the mask so it reads as passing through rather
+    than sitting on top. Single accent hue, no wordmark, no upstream branding.
+  -->
+  <defs>
+    <linearGradient id="layers" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7DD3E0"/>
+      <stop offset="1" stop-color="#1E6E8C"/>
+    </linearGradient>
+    <mask id="probe-cut">
+      <rect x="0" y="0" width="512" height="512" fill="#fff"/>
+      <!-- the arrow, dilated, punched out of the bars -->
+      <g fill="none" stroke="#000" stroke-width="76" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M256 96 V 372"/>
+        <path d="M176 300 L 256 384 L 336 300"/>
+      </g>
+    </mask>
+  </defs>
+
+  <g mask="url(#probe-cut)" fill="url(#layers)">
+    <rect x="72" y="128" width="368" height="52" rx="14"/>
+    <rect x="72" y="208" width="368" height="52" rx="14"/>
+    <rect x="72" y="288" width="368" height="52" rx="14"/>
+    <rect x="72" y="368" width="368" height="52" rx="14"/>
+  </g>
+
+  <g fill="none" stroke="#2AA5C7" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 112 V 366"/>
+    <path d="M182 296 L 256 376 L 330 296"/>
+  </g>
+</svg>
